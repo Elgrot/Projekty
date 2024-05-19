@@ -1,0 +1,15 @@
+﻿<Window x:Class="RPi_CCS811.SaveWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPi_CCS811"
+        mc:Ignorable="d"
+        Title="Zapis" Height="197" Width="501">
+    <Grid>
+        <Button x:Name="Yes" Content="Tak" HorizontalAlignment="Right" Height="45" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="65" Click="Yes_Click"/>
+        <Button x:Name="No" Content="Nie" HorizontalAlignment="Left" Height="45" Margin="10,0,0,10" Width="65" Click="No_Click" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Center" Height="30" Margin="0,36,0,0" TextWrapping="Wrap" Text="Dane nie są zapisane. Czy chcesz zapisać?" VerticalAlignment="Top" Width="380" FontSize="20"/>
+
+    </Grid>
+</Window>

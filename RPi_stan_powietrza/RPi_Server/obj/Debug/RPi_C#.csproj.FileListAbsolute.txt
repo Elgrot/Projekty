@@ -1,0 +1,8 @@
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\bin\Debug\RPi_C#.exe.config
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\bin\Debug\RPi_C#.exe
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\bin\Debug\RPi_C#.pdb
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\obj\Debug\RPi_C#.csproj.AssemblyReference.cache
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\obj\Debug\RPi_C#.csproj.SuggestedBindingRedirects.cache
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\obj\Debug\RPi_C#.csproj.CoreCompileInputs.cache
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\obj\Debug\RPi_C#.exe
+C:\Nauka\Studia\PROBIEKT2\projekt_zaliczeniowy-Elgrot\RPi_Server\obj\Debug\RPi_C#.pdb

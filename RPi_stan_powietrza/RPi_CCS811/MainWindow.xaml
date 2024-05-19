@@ -1,0 +1,21 @@
+﻿<Window x:Class="RPi_CCS811.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPi_CCS811"
+        mc:Ignorable="d"
+        Title="CCS811" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.431,0.497">
+        <Button x:Name="Odczyt_z_czujnika" Content="Odczyt z czujnika" HorizontalAlignment="Center" Height="36" Margin="0,24,0,0" VerticalAlignment="Top" Width="120" Click="Odczyt_Click"/>
+        <Button x:Name="Zapisz_dane" Content="Zapisz" HorizontalAlignment="Right" Height="39" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="99" Click="Zapisz_dane_Click"/>
+        <Button x:Name="Wczytaj_dane" Content="Wczytaj" Height="39" Margin="10,0,0,5" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="Wczytaj_dane_Click"/>
+        <Button x:Name="Wyjscie" Content="Zakończ" HorizontalAlignment="Left" Height="36" Margin="712,24,0,0" VerticalAlignment="Top" Width="58" Click="Wyjscie_Click"/>
+        <TextBox x:Name="OdczytIlosc" HorizontalAlignment="Left" Height="20" Margin="204,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" Background="White"/>
+        <TextBox x:Name="OdczytCzas" HorizontalAlignment="Left" Height="20" Margin="204,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" Background="White"/>
+        <Label Content="Podaj ilość odczytów:" HorizontalAlignment="Left" Height="30" Margin="69,10,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label Content="Podaj czas pomiędzy odczytami:" HorizontalAlignment="Left" Height="30" Margin="15,45,0,0" VerticalAlignment="Top" Width="189"/>
+        <DataGrid x:Name="OdczytDane" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="110,115,110,58" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Hidden" VerticalContentAlignment="Stretch" MinWidth="200" HorizontalContentAlignment="Stretch"/>
+        <TextBlock x:Name="TEXT" HorizontalAlignment="Left" Height="35" Margin="20,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="775"/>
+    </Grid>
+</Window>
