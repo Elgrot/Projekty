@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+# Pyplitudes: a python package developed for the python 3 course at NCU
+# Copyright (C) 2022  Emil Sujkowski
+#
+# This file is a part of Pyplitudes
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+import numpy as np
+import h5py
+
+
+def open_h5(filename):
+    """Open .h5 file and return its value"""
+
+    # return filename as a HDF5 dataset object
+    input = h5py.File(filename, "r")
+
+    g_ints = np.array(input.get("g_ints"))
+    f_i = np.array(input.get("f_i"))
+    f_a = np.array(input.get("f_a"))
+    return g_ints, f_i, f_a

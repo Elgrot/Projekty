@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Pyplitudes
+Version: 0.2
+Summary: Pyplitudes: Python package to obtain cluster amplitudes
+Author: Emil Sujkowski
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Package installation &#8212; Pyplitudes 0.3 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/groundwork.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="What and how are we solving?" href="user_amplitudes.html" />
+    <link rel="prev" title="Welcome to Pyplitudes’s documentation!" href="index.html" />
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="user_amplitudes.html" title="What and how are we solving?"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Pyplitudes’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pyplitudes 0.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Package installation</a></li>
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+
+  <section id="package-installation">
+<h1>Package installation<a class="headerlink" href="#package-installation" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Link for download may not work at the moment</p>
+</div>
+<section id="linux-ubuntu-20-04-lts">
+<h2>Linux Ubuntu 20.04 LTS<a class="headerlink" href="#linux-ubuntu-20-04-lts" title="Permalink to this heading">¶</a></h2>
+<section id="download-pyplitudes">
+<h3>Download Pyplitudes<a class="headerlink" href="#download-pyplitudes" title="Permalink to this heading">¶</a></h3>
+<p>You can download the latest version here:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://gitlab.com/Emil-Sujkowski/Pyplitudes">Pyplitudes 0.3</a></p></li>
+<li><dl class="simple">
+<dt>In case download link is not working, you can clone the repository:</dt><dd><ul>
+<li><p><strong>git&#64;gitlab.com:Emil-Sujkowski/Pyplitudes.git</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="dependencies-for-pyplitudes-package">
+<h3>Dependencies for Pyplitudes package<a class="headerlink" href="#dependencies-for-pyplitudes-package" title="Permalink to this heading">¶</a></h3>
+<p>To compile, run and test Pyplitudes, you need the following packages:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">gcc</span></code> (&gt;=9.4.0)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo  apt-get install gcc g++
+$ gcc --version
+$ g++ --version
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span></code> (&gt;=3.8.10)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install python3
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span></code> (&gt;=2.25.1)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install git
+$ git --version
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip3</span></code> (&gt;=20.0.2)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install python3-pip
+$ pip3 --version
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pybind11</span></code> (&gt;=2.5.0)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip3 install pybind11==2.5.0
+$ python3
+$ import pybind11
+$ pybind11.__version__
+$ exit()
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code> (&gt;=1.12.3)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip3 install numpy
+$ python3
+$ import numpy
+$ numpy.__version__
+$ exit()
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pytest</span></code> (&gt;=6.2.5)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip3 install pytest
+$ python3
+$ import pytest
+$ pytest.__version__
+$ exit()
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">h5py</span></code> (&gt;=3.0.0)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip3 install --no-binary=h5py h5py
+$ python3
+$ import h5py
+$ h5py.__version__
+$ exit()
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">setuptools</span></code> (&gt;=61.0.0)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip3 install setuptools
+$ python3
+$ import setuptools
+$ setuptools.__version__
+$ exit()
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/PyplitudesBackground.png" alt="Logo"/>
+            </a></p>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Package installation</a><ul>
+<li><a class="reference internal" href="#linux-ubuntu-20-04-lts">Linux Ubuntu 20.04 LTS</a><ul>
+<li><a class="reference internal" href="#download-pyplitudes">Download Pyplitudes</a></li>
+<li><a class="reference internal" href="#dependencies-for-pyplitudes-package">Dependencies for Pyplitudes package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to Pyplitudes’s documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="user_amplitudes.html"
+                          title="next chapter">What and how are we solving?</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/user_installation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="user_amplitudes.html" title="What and how are we solving?"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Pyplitudes’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Pyplitudes 0.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Package installation</a></li>
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Emil Sujkowski.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+    </div>
+  </body>
+</html>
